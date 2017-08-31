@@ -1,27 +1,32 @@
 *{
   margin: 0;
   padding: 0;
-  background-color:  #f5fbfb;
+  background-color: #e9f0d2;
 }
 
 #content{
  width: 60%;
  padding: 30px;
+ margin: 0 auto;
+ background-color: #fafbf5;
 }
+
+#content pre .asciidb, #content pre, #content p, h1,tr, td{
+   background-color: #fafbf5;
+}
+
 
 #copyright{
   color: #545454;
   padding: 30px;
   background-color: #c8c8c8;
-  height: 150px;
+  height: 120px;
+  margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 256aa019f45499232c2e3de476f89269fefc92b7
 footer{
   width: 100%;
+  margin: 0 auto;
 }
 
 @media screen and (max-device-width: 480px) and (orientation: portrait),
@@ -31,8 +36,7 @@ footer{
   width:60%;
 }
 #asciiContainer{
-  font-size: 50%;
+  font-size: 60%;
 }
-
 
 }

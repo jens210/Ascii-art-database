@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include "db.php"; ?> <!-- Import php file to handle database connectivity -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +7,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <div id="content">
+
 <h1>Ascii</h1>
-<p>Acronym for the American Standard Code for Information Interchange. Pronounced ask-ee, ASCII is a code for representing English characters as numbers, with each letter assigned a number from 0 to 127. For example, the ASCII code for uppercase M is 77. Most computers use ASCII codes to represent text, which makes it possible to transfer datafrom one computer to another.
+<?php
+  $ascii = "ASCII is simple art";
+  echo $ascii;
+ ?>
+<p> Acronym for the American Standard Code for Information Interchange. Pronounced ask-ee, ASCII is a code for representing English characters as numbers, with each letter assigned a number from 0 to 127. For example, the ASCII code for uppercase M is 77. Most computers use ASCII codes to represent text, which makes it possible to transfer datafrom one computer to another.
 For a list of commonly used characters and their ASCII equivalents, refer to the ASCII page in the Quick Reference section.
 Text files stored in ASCII format are sometimes called ASCII files. Text editors and word processors are usually capable of storing data in ASCII format, although ASCII format is not always the default storage format. Most data files, particularly if they contain numeric data, are not stored in ASCII format. Executable programsare never stored in ASCII format.</p>
 
-<div id="asciiContainer">
+
 <pre id="ascii">
 
 
@@ -228,9 +233,17 @@ Text files stored in ASCII format are sometimes called ASCII files. Text editors
   ░░░░toucan░░░░░░▀▄░░░▐█████████████▄
   ░░░░░░has░░░░░░░░▀▄▄███████████████
   ░░░░░arrived░░░░░░░░░░░░█▀██████░░
+
+  <div id="asciiContainer">
+    <div class="asciiDB">
+        <?php echo GetASCIIArtsFromDB(); ?> <!-- Call the function to get ASCII arts from the database -->
+    </div>
+
   </pre>
 </div>
 </div>
+
+
 <footer>
   <div id="copyright">
   Copyright.
