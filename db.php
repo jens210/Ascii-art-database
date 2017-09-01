@@ -68,4 +68,27 @@ function GetASCIIArtsFromDB()
   return $output;
 }
 
+
+//Function that takes an ASCII art ($name, $art) and saves it in the database
+function CreateASCIIInDB($title, $content)
+{
+    //connect to the MySQL database and save the connection in a variable
+    $conn = ConnectToDB();
+
+    //create the database query, so we can insert some new data :)
+    $sql = "INSERT INTO asciidb (title, content) VALUES ('" . $title . "','" . str_replace("'", "\"",$content) . "')";
+    
+    //if the insert query went good, redirect to front page (index.php)
+    //otherwise display an error message
+    if ($conn->query($sql) === TRUE)
+        header("Location: index.php");
+    else
+        echo "Error: " . $sql . "<br>" . $conn->error;
+
+    //close the connection
+    $conn->close();    
+}
+
+
 ?>
+

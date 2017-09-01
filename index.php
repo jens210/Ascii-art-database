@@ -4,11 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ascii Art</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css"> 
+      <!-- Latest compiled and minified css !--> 
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Optional theme !-->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 </head>
 <body>
 
+
 <div id="content">
+<form action="contribute.php" method="post">
+<div class="form-group">
+        <div class="form-group">
+         <input type="submit" id="submit" class="btn btn-default" value="contribute your ASCII art">
+        </div>
+</form>
 
 <h1>Ascii</h1>
 <?php
@@ -242,7 +253,10 @@ Text files stored in ASCII format are sometimes called ASCII files. Text editors
   </pre>
 </div>
 </div>
-
+    <!-- Jquery !-->
+    <script> src="js/jquery-3.2.1.min.js"</script>
+    <!-- Latest compiled and minified javascript !-->
+    <script> src="js/bootstrap.min.js" </script>    
 
 <footer>
   <div id="copyright">
