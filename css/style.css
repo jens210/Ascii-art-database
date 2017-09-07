@@ -1,11 +1,10 @@
 *{
   margin: 0;
   padding: 0;
-  /*background-color: #e9f0d2; */
 }
 
 #content{
- width: 60%;
+ width: 75%;
  padding: 30px;
  margin: 0 auto;
  background-color: #fafbf5;
@@ -14,20 +13,46 @@
 #content pre .asciidb, #content pre, #content p, h1,tr, td{
    background-color: #fafbf5;
 }
-
-
+h2{
+  float: none;
+  text-align: left;
+}
+.form-btn{
+  text-align: right;
+  inline-size: block;
+  padding: 5px;
+  float: right;
+}
 #copyright{
   height: 120px;
-  width: 100%;
+  padding: 30px;
   margin: 0 auto;
-  background-color: #fafbf5;
 }
 
 footer{
-  width: 60%;
+  width: 75%;
   margin: 0 auto;
   background-color: #fafbf5;
 }
 
+/* phone */
+@media screen and (max-device-width: 480px) and (orientation: portrait),
+screen and (max-device-width: 740px) and (orientation: landscape),
+screen and (max-width:740px)
 
+{
+  body{
+
+    width: 100%;
+    
+  }
+  #content{
+    padding: 0;
+    width: 100%;
+ 
+  }
+  footer{
+    width: 100%;
+  }
+}
 

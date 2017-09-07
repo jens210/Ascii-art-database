@@ -13,9 +13,21 @@ include "db.php";
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Optional theme !-->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>  
+<div id="content">
+<form action="contribute.php" method="post">
+<div class="form-btn">
+         <input type="submit" id="submit" class="btn btn-default" value="Contribute">
+        </div>
+</form>
+<form action="index.php" method="post">
+<div class="form-btn">
+         <input type="submit" id="home" class="btn btn-default" value="Home">
+        </div>
+</form>
+
     <div class="container">
         <div class="row">
             <div class="col-xs-12"> 
@@ -37,7 +49,7 @@ include "db.php";
             </div> 
         </div>
     </div>
-
+    </div>
     <!-- Jquery !-->
     <script> src="js/jquery-3.2.1.min.js"</script>
     <!-- Latest compiled and minified javascript !-->

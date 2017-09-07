@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ascii Art</title>
+  <title>ASCII Art</title>
   <link rel="stylesheet" href="css/style.css"> 
       <!-- Latest compiled and minified css !--> 
       <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -12,16 +12,18 @@
 </head>
 <body>
 
-
 <div id="content">
 <form action="contribute.php" method="post">
-<div class="form-group">
-        <div class="form-group">
-         <input type="submit" id="submit" class="btn btn-default" value="contribute your ASCII art">
+<div class="form-btn">
+         <input type="submit" id="submit" class="btn btn-default" value="Contribute">
         </div>
 </form>
-
-<h1>Ascii</h1>
+<form action="index.php" method="post">
+<div class="form-btn">
+         <input type="submit" id="home" class="btn btn-default" value="Home">
+        </div>
+</form>
+<h2>ASCII</h2>
 <?php
   $ascii = "ASCII is simple art";
   echo $ascii;

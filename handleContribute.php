@@ -7,8 +7,8 @@ include "db.php";
 //if ($_POST["title"] != "" && $_POST["content"] != "")
 //{
   
-  $title = $_POST["title"];
-  $content = $_POST["content"];
+  $title = htmlspecialchars($_POST["title"]);
+  $content = htmlspecialchars($_POST["content"]);
 
   //create the new ASCII Art in the database
   echo CreateASCIIInDB($title,$content);
